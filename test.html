@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"> 
+        <div class="stade">
+            <div class="right1">
+                <div class="right">
+
+                </div>
+
+            </div>
+            <div class="middle2">
+                <div class="middle1">
+                    <div class="middle">
+                        <div class="trait">
+                        </div>
+                    </div>
+    
+                </div>
+               
+            </div>
+
+           
+           
+            
+            <div class="left">
+                <div class="left1">
+
+                </div>
+
+            </div>
+            
+
+        </div>
+
+        
+
+    </div>
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div> 
+    </div>
+
+
+    
+</body>
+<script src="script.js"></script>
+</html>
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #ffffff;
+    color: white;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 100px;
+}
+.container{
+    background-color: #2a7e2c;
+    color: white;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    height: 42vh;
+    width: 69%;
+
+}
+.border{
+    border: 2px solid white;
+}
+.stade{
+   display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    margin-top: 100px;
+
+    
+}
+.middle{
+    background-color:  #ffffff;
+    height: 10px;
+    width: 10px;
+   margin: 19px;
+   border-radius: 50%;
+   display: flex;
+  
+
+
+}
+.trait {
+    border: 1px solid white;
+    position: relative;
+    height: 287px;
+    margin-top: -145px;
+    margin-left: 4px;
+}
+/* .middle2{
+     border-top: 1px solid #000;
+/* width : 700px; 
+
+} */
+ .middle1{
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+  
+   border-radius: 50%;
+   border: 1px solid white;
+   margin-top: -30px;
+
+
+
+}
+
+/* .middle1 {
+    background-color: transparent;
+    height: 92px;
+    width: 92px;
+    
+    border-radius: 77%;
+    border: 1px solid white;
+    margin-top: -23px;
+} */
+.right{
+    height: 54px;
+    width: 48px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    margin-left: 19px;
+    margin-top: 19px;
+    /* background: rgb(255, 255, 255); */
+    /* transform: rotate(45deg); /* Internet Explorer 
+   
+    -o-transform: rotate(45deg); Opera */
+}
+
+.right1{
+    border-radius: 50%;
+    border: 1px solid white;
+    height: 92px;
+    width: 92px;
+    margin-left: -29px;
+
+}
+
+.left{
+    height: 54px;
+    width: 40px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    margin-left: 12px;
+    margin-top: 19px;
+    /* background: rgb(255, 255, 255); */
+    /* transform: rotate(45deg); /* Internet Explorer 
+   
+    -o-transform: rotate(45deg); Opera */
+}
+
+.left1{
+    border-radius: 50%;
+    border: 1px solid white;
+    height: 92px;
+    width: 92px;
+    margin-left: -19px;
+    margin-top: -21px;
+
+}
+
+.loader{
+   
+   opacity: 1;
+   display: flex;
+   position: fixed;
+   bottom: 190px;
+   transition: opacity 0.7s ease-in;
+}
+
+.loader.show{
+   opacity: 1;
+
+}
+.circle{
+   background-color: rgb(0, 0, 0);
+   height: 10px;
+   width: 10px;
+   margin: 5px;
+   border-radius: 50%;
+   animation: bouger 0.5s ease-in infinite;
+}
+.circle:nth-of-type(2){
+   animation-delay: 0.1s;
+   
+}
+.circle:nth-of-type(2){
+   animation-delay: 0.2s;
+   
+}
+@keyframes bouger{
+    0%,100%{
+        transform: translateY(0);
+       
+
+    }
+    50%{
+        transform: translateY(-10px);
+
+    }
+    
+}

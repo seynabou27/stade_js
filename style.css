@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97vh;
+}
+.container {
+    background-image: url(./img/pelouse2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 323px;
+    width: 768px;
+    position: absolute;
+}
+
+.container *{
+    position: relative;
+    z-index: 1;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.stade {
+    border: 1px solid white;
+    height: 323px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.tribune{
+    position: absolute;
+    top: 0;
+    display: flex;
+}
+.tribune .tribune-haut{
+    border: 2px solid white ;
+    height: 12px;
+}
+
+.coins{
+    display: flex;
+    position: absolute;
+}
+/* .coin1 {
+    border-right: 2px solid;
+    top: -89px;
+    position: absolute;
+    height: 280px;
+    transform: rotate(139deg);
+    margin-left: -940px;
+} */
+.coin1 {
+    border-right: 2px solid;
+    top: 0px;
+    position: absolute;
+    height: 250px;
+    transform: rotate(238deg);
+    margin-top: 98px;
+    margin-left: -483px;
+}
+.coin2 {
+    border-left: 2px solid;
+    top: 0;
+    position: absolute;
+    height: 300px;
+    transform: rotate(122deg);
+    margin-top: -375px;
+    margin-left: -489px;
+}
+.coin3 {
+    float: right;
+    border-right: 2px solid;
+    top: 0px;
+    position: absolute;
+    height: 275px;
+    transform: rotate(58deg);
+    margin-top: -355px;
+    left: 475px;
+}
+.coin4 {
+    float: right;
+    border-right: 2px solid;
+    top: 0px;
+    position: absolute;
+    height: 280px;
+    transform: rotate(122deg);
+    margin-top: 83px;
+    margin-left: 480px;
+}
+/* .coin1 {
+    border-right: 2px solid;
+    top: -89px;
+    position: absolute;
+    height: 280px;
+    transform: rotate(139deg);
+    margin-left: -940px;
+}
+.coin2 {
+    border-left: 2px solid;
+    /* top: -23px; 
+    display: flex;
+    height: 269px;
+    transform: rotate(46deg);
+    margin-left: -902px;
+    margin-top: 452px;
+} */
