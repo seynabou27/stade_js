@@ -10,16 +10,21 @@ var droite = document.getElementById('droite');
 
 
 let nbrChaise1 =34;
-let nbrChaise2 =19;
+let nbrChaise2 =18;
 let nbrChaise3 =18;
+
 
 let myvalue = haut.getAttribute("value");
 let myvalue2 = gauche.getAttribute("value");
 let myvalue3 = droite.getAttribute("value");
+let myvalue4 = bas.getAttribute("value");
+
 
 stade(myvalue , haut , nbrChaise1 )
 stade(myvalue2 , gauche , nbrChaise2)
 stade(myvalue3 , droite , nbrChaise3)
+stade(myvalue4 , bas , nbrChaise1)
+
 
 
 function stade(params , element , nbr){
